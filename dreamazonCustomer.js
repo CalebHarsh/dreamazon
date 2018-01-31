@@ -13,9 +13,18 @@ var selcetionPrompt = function () {
     message: "How many do you want?",
     name: "quantity",
     validate: value => /^[\d]+$/.test(value) ? true : console.log("   >Invalid Input")
+  },
+  {
+    message: "Is this correct?",
+    type: "confirm",
+    name: "yes"
   }
 ]).then(answers => {
-    dream_db.readItem(answers.item_id, answers.quantity, checkQuanitiy)
+    if(answers.yes) {
+      dream_db.readItem(answers.item_id, answers.quantity, checkQuanitiy)
+    } else {
+      selcetionPrompt
+    }
   })
 }
 
