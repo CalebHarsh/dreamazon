@@ -1,0 +1,24 @@
+{
+  "name": "dreamazon",
+  "version": "1.0.0",
+  "description": "Like Amazon but with a dream",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebHarsh/dreamazon.git"
+  },
+  "author": "Caleb Harshman <caleb.harsh139@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebHarsh/dreamazon/issues"
+  },
+  "homepage": "https://github.com/CalebHarsh/dreamazon#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^5.0.1",
+    "mysql": "^2.15.0"
+  }
+}
