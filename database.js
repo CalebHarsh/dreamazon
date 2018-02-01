@@ -24,8 +24,6 @@ DatabaseConnection.prototype.connect = function () {
       return;
     }
 
-    console.log("Connection as id " + connection.threadId)
-
   })
 }
 
@@ -96,7 +94,7 @@ DatabaseConnection.prototype.readItem = function (id, quantity, cb) {
 }
 
 DatabaseConnection.prototype.readLowItems = function (cb) {
-  this.connection.query(`SELECT * FROM ${this.table} WHERE stock_quantity < 17`,
+  this.connection.query(`SELECT * FROM ${this.table} WHERE stock_quantity < 16`,
     (err, res) => {
       if (err) throw err
       var table = new Table({

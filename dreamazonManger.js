@@ -79,4 +79,4 @@ function addToInvertory() {
   })
 }
 
-menuSelection()
+module.exports = menuSelection

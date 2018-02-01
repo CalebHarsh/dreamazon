@@ -1,3 +1,4 @@
+var start = new require("./CLI.js")
 var inquirer = require("inquirer")
 var Database = require("./database.js")
 var dream_db = new Database()
@@ -17,6 +18,7 @@ var menuLookUp = function () {
         createDepartPrompt()
         break
       case "Quit":
+        console.log("Good-Bye")
         dream_db.disconnect()
         break
     }
@@ -38,4 +40,4 @@ function createDepartPrompt() {
   })
 }
 
-menuLookUp()
+module.exports = menuLookUp

@@ -1,6 +1,5 @@
 var Database = require("./database.js")
 var inquirer = require("inquirer")
-
 var dream_db = new Database()
 
 var selcetionPrompt = function () {
@@ -23,7 +22,7 @@ var selcetionPrompt = function () {
     if(answers.yes) {
       dream_db.readItem(answers.item_id, answers.quantity, checkQuanitiy)
     } else {
-      selcetionPrompt
+      selcetionPrompt()
     }
   })
 }
@@ -50,9 +49,12 @@ function buyMore () {
     if(answers.buyMore) {
       selcetionPrompt()
     } else {
+      console.log("Good-Bye")
       dream_db.disconnect()
     }
   })
 }
-
-dream_db.readAllItems(selcetionPrompt)
+function startCust () {
+  dream_db.readAllItems(selcetionPrompt)
+}
+module.exports = startCust
