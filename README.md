@@ -16,8 +16,7 @@ npm install
 
 * Another thing necessary for this app is to create a password.js that exports your MySQL password. Something like this.
 
-
-``` javacript
+``` javascript
 module.exports = "password"
 ```
 
