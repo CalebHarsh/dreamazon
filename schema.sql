@@ -33,8 +33,9 @@ VAlUES("Computer", "Electronics", 120.99, 4),
   ("Camping Chair", "Accessories", 13.99, 2),
   ("Marvel Poster", "Accessories", 5.99, 14);
 
+
 INSERT INTO departments (department_name, over_head_costs)
-VALUES ("Electronics", 1000),
+VALUES ("Electronics", 5000),
   ("Games", 3000),
   ("Movie", 1200),
   ("Attire", 3900),

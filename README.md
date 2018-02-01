@@ -10,19 +10,16 @@ An Amazon-like storefront with connection to MySQL. The app will take in orders 
 
 * Before you run the app you need to install the necessary node packages. The app uses `cli-table`, `mysql`, and `inquirer`. Enter this into the command line to install all of them.
 
-- - -
-
+```
 npm install
-
-- - -
+```
 
 * Another thing necessary for this app is to create a password.js that exports your MySQL password. Something like this.
 
-- - - 
 
+``` javacript
 module.exports = "password"
-
-- - -
+```
 
 * Now your ready to run the app.
 

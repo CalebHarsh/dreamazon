@@ -7,7 +7,7 @@ var selcetionPrompt = function () {
   inquirer.prompt([{
     message: "Type the Item's ID you wish to buy.",
     name: "item_id",
-    validate: value => value > 0 && value < 11 ? true : console.log("   >Invalid Number")
+    validate: value => value > 0 ? true : console.log("   >Invalid Number")
   },{
     message: "How many do you want?",
     name: "quantity",
