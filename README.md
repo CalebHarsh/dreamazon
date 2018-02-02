@@ -19,6 +19,7 @@ npm install
 ``` javascript
 module.exports = "password"
 ```
+* The last thing you need to do is run the schema in `schema.sql` into MySQL to create the database and fill in the tables with mock data. 
 
 * Now your ready to run the app.
 
